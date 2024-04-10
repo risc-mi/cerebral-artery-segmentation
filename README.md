@@ -1,4 +1,4 @@
-# Segmentation and Registeration of Cerebral Arteries in Structural MRI
+# Segmentation and Registration of Cerebral Arteries in Structural MRI
 
 ## About
 The code associated with this repository will be released upon acceptance of our work at the respective conference(s).
