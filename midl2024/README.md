@@ -78,8 +78,8 @@ The CoW mask for each scan be reproduced through the following steps:
   - prepared masks are shared through our [Google Drive](https://drive.google.com/open?id=1QL4Kr3pis0WiN2k3RGxE-t5knvvosv_b&usp=drive_fs).
 
 For direct comparison, the evaluation results reported in our publications are summarized in:
-- full image region: [Results](resource%2Fval_dsc_full.xlsx), [Plot](resource%2Fval_dsc_full.png).
-- cow image region: [Results](resource%2Fval_dsc_cow.xlsx), [Plot](resource%2Fval_dsc_cow.png).
+- full image region: [Results](resource%2Fval_dsc_full.csv), [Plot](resource%2Fval_dsc_full.png).
+- cow image region: [Results](resource%2Fval_dsc_cow.csv), [Plot](resource%2Fval_dsc_cow.png).
 
 <img src="resource/val_dsc_cow.png" style="max-height: 300px"  />
 
