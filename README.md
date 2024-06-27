@@ -3,13 +3,13 @@
 ## About
 This repository comprises our results and code for the methods for **segmentation and registration** of cerebral arteries described in the following publications:
 
-* _[[MIUA2024a](miua2024a%2FREADME.md)]_ **Towards Segmenting Cerebral Arteries from Structural MRI**\
+* _[[MIUA2024a](miua2024a%2FREADME.md)]_ **Towards Segmenting Cerebral Arteries from Structural MRI** [Under construction]\
 **Accepted** at Medical Image Understanding and Analysis (MIUA) Conference 2024\
  Full Reference: `Alshenoudy, A., Sabrowsky-Hirsch, B., Scharinger, J., Thumfart, S., Giretzlehner, M.. (2024). Towards Segmenting Cerebral Arteries from Structural MRI. 28th UK Conference on Medical Image Understanding
 and Analysis (MIUA 2024). Springer Nature.`
 
 
-* _[[MIUA2024b](miua2024b%2FREADME.md)]_ **Robust Multi-Modal Registration of Cerebral Vasculature**\
+* _[[MIUA2024b](miua2024b%2FREADME.md)]_ **Robust Multi-Modal Registration of Cerebral Vasculature** [Under construction]\
 **Accepted** at Medical Image Understanding and Analysis (MIUA) Conference 2024\
  Full Reference: `Sabrowsky-Hirsch, B., Alshenoudy, A., Scharinger, J., Gmeiner, M., Thumfart, S., Giretzlehner, M.. (2024). Robust Multi-Modal Registration of Cerebral Vasculature. 28th UK Conference on Medical Image Understanding
 and Analysis (MIUA 2024). Springer Nature.`
