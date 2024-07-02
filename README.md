@@ -21,6 +21,10 @@ and Analysis (MIUA 2024). Springer Nature.`
 Please find more details on the respective subfolder linked for each publication. \
 For our previous work on the **anatomical annotation** of cerebral arteries, refer to our previous [repository](https://github.com/risc-mi/cerebral-artery-annotation).
 
+
+![landing_page.png](./assets/landing_page.png)
+_Figure 2: Overview of MIDL2024 method and respective submodules employed from our other publications._
+
 ## Contact
 
 If you have any inquiries, please open a GitHub issue.
