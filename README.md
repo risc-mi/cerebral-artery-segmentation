@@ -1,5 +1,9 @@
 # Segmentation and Registration of Cerebral Arteries in Structural MRI
 
+![segmentation_results.png](./assets/segmentation_results.png)
+_Figure 1: Segmentation results on both the IXI and TubeTK datasets_for angiographic and structural MR sequences.
+
+
 ## About
 This repository comprises our results and code for the methods for **segmentation and registration** of cerebral arteries described in the following publications:
 
