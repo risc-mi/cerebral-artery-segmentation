@@ -1,7 +1,7 @@
 # Segmentation and Registration of Cerebral Arteries in Structural MRI
 
 ![segmentation_results.png](./assets/segmentation_results.png)
-_Figure 1: Segmentation results on both the IXI and TubeTK datasets both for angiographic and structural MR sequences._
+_Figure 1: Segmentation results on both the IXI and TubeTK datasets for angiographic and structural MR sequences._
 
 
 ## About
