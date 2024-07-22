@@ -1,5 +1,5 @@
 # Robust Multi-Modal Registration of Cerebral Vasculature
-![overview.png](resource%2Foverview.png)
+![overview.png](resource%2FOverview.png)
 Figure 1: Overview of our  method for TOF to MR registration.
 
 ## About
