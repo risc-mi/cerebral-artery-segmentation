@@ -1,5 +1,5 @@
 # Towards Segmenting Cerebral Arteries from Structural MRI
-<img src="title_figure.png" alt="cerebral arteries predicted for structural scans" height="300">
+<img src="figures/title_figure.png" alt="cerebral arteries predicted for structural scans" height="300">
 
 ## About
 
@@ -18,6 +18,9 @@ This can be summarized below:
 2. Intra-patient registration from structural space to TOF-MRA space
 3. Training of structural MRIs with pseudo-labels in a supervised setting
 
+![method.svg](figures/method.svg)
+_Overview of our proposed three-step method._
+
 ## How to use
 
 Our work fully relies on the nnU-Net framework for training and inference. 
@@ -32,11 +35,30 @@ For NiftyReg you can check out their [GitHub](https://github.com/KCL-BMEIS/nifty
 
 All of our models are trained in a 5-fold cross-validation setting,
 in which they are trained on a combined database of IXI and TubeTK subjects.
+### Registration
+We perform intra-patient registration to map structural MRI to the space of TOF-MRA.
+First, we employ ANTsPy to perform a `DenseRigid` transformation that is followed by an affine transformation step based 
+on the Block matching algorithm for global registration implemented in NiftyReg.
+We found that this yields better results on IXI and TubeTK data than the `Affine` setting in ANTsPy.
+Refer to `registration.py` on how to use each step on a sample input.
 
 ### Trained Models
-You can download our TOF-MRA model from [here](https://drive.google.com/file/d/1DYSbiD0wlUb8q0BLDtZK094yIl34Xi3K/view?usp=sharing)
-and use it to predict pseudo-labels for IXI/TubeTK or possibly a different dataset. On the other hand, you can download 
-our structural MRI model from [here](https://drive.google.com/file/d/1uydOFTlT5S5-E427prpNt4mlx5y0IEjb/view?usp=sharing).
+We provide pretrained weights for models **M<sub>A</sub>** and **M<sub>S</sub>** at [Google Drive](https://drive.google.com/drive/folders/1BnIQ0HtvWwciwVwIAMXPkUBqjow9hQdn?usp=sharing).
+You can use our models with the nnU-Net framework to generate predictions for your data:
+
+1. First download and extract the models to a folder `<path-to/models>`.
+2. Store the images (we recommend using the .nii.gz format) at a folder `<path-to/input>`.\
+The filenames should follow the format `<name>_0000.nii.gz`, e.g. 'pat01pd_0000'.\
+**Note**: The postfix `_0000` is used by nnU-Net to identify channels and should always be present.
+3. Create your output folder `<path-to/output>`.
+4. Activate your python environment. Make sure nnU-Net is set up accordingly.
+5. In the environment prompt, run ```nnUNetv2_predict_from_modelfolder -m "<path-to/models>" -i "<path-to/input>" -o "<path-to/output>"```
+
+**Note**: It is worth checking the image orientation (as in the cosine orientation matrix), as it is sometimes 
+incorrectly interpreted by nnU-Net. The models are not orientation-agnostic and will produce inferior results if the 
+orientation of the input does not match the standard patient orientation. We found preprocessing the images with 
+`SimpleITK.DICOMOrient()`, using 'RAI' as the reference orientation to convert to, to be sufficient.
+
 
 
 ## References
