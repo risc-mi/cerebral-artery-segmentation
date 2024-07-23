@@ -20,7 +20,7 @@ The code in this repository offers our registration method and evaluation utilit
 
 ### Preparing the vessel segmentations
 
-Before running the registration method, the cerebral vessels need to be extracted from the fixed and moving images. This can be done using the segmentation method &#952;<sub>M</sub>, which we previously published in [repository](https://github.com/risc-mi/cerebral-artery-annotation). Please refer to the repository for details on how to use segmentation method. To exemplar segmentations for testing can be found in the folder `./resource`.
+Before running the registration method, the cerebral vessels need to be extracted from the fixed and moving images. This can be done using the segmentation method &#952;<sub>M</sub>, which we previously published in our [repository](https://github.com/risc-mi/cerebral-artery-annotation). Please refer to the repository for details on how to use segmentation method. To exemplar segmentations for testing can be found in the folder `./resource`.
 
 ### Registering cerebral vessels
 
@@ -32,7 +32,7 @@ The commandline tool can be executed with test data: ```python -m source.main --
 * `--moving`: segmentation of vessels in the moving image (I<sub>ref</sub>)
 * `--output`: output path for the resulting transform, must have an extension supported by SimpleITK, e.g., `.tfm` or `.hdf`. (T<sub>R</sub>)
 * `--truth`: (optional) truth transform to evaluate against, must have an extension supported by SimpleITK, e.g., `.tfm` or `.hdf`
-* `--warped`: (optional) warped image to write, must have an extension supported by SimpleITK, e.g., `.tnrrd`
+* `--warped`: (optional) warped image to write, must have an extension supported by SimpleITK, e.g., `.nrrd`
 * `--show`: (optional) whether to visualize the registered point-clouds using Open3D.
 * `--binary`: (optional) whether to mask any foreground label instead of extracting the left and right labels predicted by model &#952;<sub>M</sub>
 
